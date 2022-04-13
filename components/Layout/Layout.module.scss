@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    .asideContainer{
+        width: 250px;
+        height: 95vh;
+    }
+    .mainContainer{
+        // background-color: powderblue;
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+}
