@@ -40,14 +40,12 @@
 // }
 
 .container {
-//   background-color: peru;
   width: 95%;
   height: 100px;
   margin: 0 auto;
   align-items: center;
   justify-content: space-between;
   display: flex;
-  //   justify-content: space-around;
   .input {
     display: flex;
     flex-direction: row;

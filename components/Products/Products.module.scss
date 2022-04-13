@@ -1,6 +1,7 @@
 .container {
   // background: red;
-  margin: 5px 0;
+  width: 95%;
+  margin: 5px auto;
   display: flex;
   flex-direction: column;
   .title {
@@ -10,11 +11,13 @@
     font-weight: 700;
     font-size: 25px;
     color: white;
+    margin: 15px 0;
     align-items: center;
     justify-content: space-between;
     .left {
         display: flex;
         flex-direction: row;
+        align-items: center;
       h3 {
         margin-right: 50px;
       }
@@ -79,5 +82,9 @@
         }
       }
     }
+  }
+  .cards{
+    display: flex;
+    flex-direction: row;
   }
 }
