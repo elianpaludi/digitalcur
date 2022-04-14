@@ -1,17 +1,23 @@
-.container{
+.container {
+    width: 100%;
+    height: 100%;
+  .superMainContainer {
     display: flex;
     flex-direction: row;
-    .asideContainer{
-        width: 250px;
-        height: 95vh;
+    .asideContainer {
+      width: 250px;
+      height: 100%;
+      position: sticky;
+      top: 0;
     }
-    .mainContainer{
-        // background-color: powderblue;
-        width: 100%;
-        margin: 0 auto;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        color: white;
+    .mainContainer {
+      // background-color: powderblue;
+      width: 100%;
+      margin: 0 auto;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      color: white;
     }
+  }
 }

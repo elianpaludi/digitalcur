@@ -29,7 +29,16 @@ body{
     background-color: #212123;
     // background-color: rgb(102, 2, 145);
 }
-
+.slider{
+    width: 75vw;
+    position: relative;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
 // .container_home{
 //     width: calc(100% - 240px);
 //     height: 100vh;
