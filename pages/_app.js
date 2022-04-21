@@ -9,3 +9,7 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp
+
+// Responsive del Index
+// Pagination del index
+// Redirecciones del aside

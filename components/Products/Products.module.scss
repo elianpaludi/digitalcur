@@ -17,9 +17,9 @@
     align-items: center;
     justify-content: space-between;
     .left {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
       h3 {
         margin-right: 50px;
       }
@@ -31,28 +31,8 @@
           background-color: #2d60e4;
         }
       }
-      .top {
-        width: 100px;
-        height: 30px;
-        background-color: transparent;
-        border: 1px solid #484848;
-        transition: all 250ms;
-        &:hover {
-          background-color: #2d60e4;
-          border: none;
-        }
-      }
-      .popular {
-        width: 125px;
-        height: 30px;
-        background-color: transparent;
-        border: 1px solid #484848;
-        transition: all 250ms;
-        &:hover {
-          background-color: #2d60e4;
-          border: none;
-        }
-      }
+      .top,
+      .popular,
       .mostSold {
         width: 125px;
         height: 30px;
@@ -69,12 +49,13 @@
       display: flex;
       flex-direction: row;
       color: #ffffff;
-      text-decoration:underline;
+      text-decoration: underline;
       font-family: Montserrat, sans-serif;
       font-weight: 600;
       font-size: 15px;
       a {
         cursor: pointer;
+        color: #ffff;
         margin-right: 5px;
       }
       img {
@@ -87,9 +68,42 @@
       }
     }
   }
-  .cards{
-    // width: 90vw;
-    width: 75vw;
+  .cards {
+    // width: 75vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 1110px) {
+  .title {
+    font-size: 20px !important;
+    h3 {
+      margin-right: 10px !important;
+    }
+    .top,
+    .popular,
+    .mostSold {
+      width: 100px !important;
+      font-size: 12px !important;
+    }
+  }
+}
+@media (max-width: 927px) {
+  .title {
+    font-size: 15px !important;
+  }
+  .categories {
+    font-size: 10px !important;
+  }
+}
+@media (max-width: 800px) {
+  .title {
+    font-size: 10px !important;
+    h3 {
+      margin-right: 0 !important;
+    }
   }
 }

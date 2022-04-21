@@ -1,9 +1,12 @@
+
+
+
 .container{
     display: flex;
-    margin: 0 10px;
+    margin: 10px 100px 10px 0;
     flex-direction: column;
     justify-content: center;
-    width: 276px;
+    width: 250px;
     height: 350px;
     border-radius: 10px;
     background-color: #28282A ;
@@ -11,9 +14,6 @@
     .image{
         max-width: 85% ;
         margin: 0 auto;
-        img{
-
-        }
     }
     .desc{
         display: flex;

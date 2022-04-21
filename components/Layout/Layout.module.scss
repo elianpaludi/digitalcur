@@ -1,8 +1,9 @@
 .container {
-    width: 100%;
+    width: 100% !important;
     height: 100%;
   .superMainContainer {
     display: flex;
+    width: 100% !important;
     flex-direction: row;
     .asideContainer {
       width: 250px;

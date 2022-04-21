@@ -2,24 +2,37 @@ import React from "react";
 import styles from "./Asidenav.module.scss";
 import Image from "next/Image";
 import Link from "next/Link";
+import { useRouter } from "next/router";
 
 const Asidenav = () => {
+  const router = useRouter();
+  const handleClick = (e) => {
+    e.preventDefault();
+    router.push("/");
+  };
+
   return (
     <nav className={styles.nav}>
       <div className={styles.logo}>
         <Image src="/icons/logo.svg" width={150} height={50} />
       </div>
       <div className={styles.catalogBtn}>
-        <button>Go to catalog</button>
+        <button type="button" onClick={handleClick}>
+          Go to catalog
+        </button>
       </div>
       <div className={styles.section1}>
         <div className={styles.item}>
           <Image src="/icons/user.svg" width={25} height={25} />
-          <a>Profile</a>
+          <Link href="/User/Login">
+            <a>Log-in</a>
+          </Link>
         </div>
         <div className={styles.item}>
           <Image src="/icons/search.svg" width={25} height={25} />
-          <a>Search</a>
+          <Link href="/Search/Index">
+            <a>Search</a>
+          </Link>
         </div>
       </div>
       <div className={styles.categoryTitle}>
@@ -29,19 +42,27 @@ const Asidenav = () => {
       <div className={styles.section2}>
         <div className={styles.item}>
           <Image src="/icons/physicalgames.svg" width={25} height={25} />
-          <a>Physical Games</a>
+          <Link href="/Search/PhysicalGames">
+            <a>Physical Games</a>
+          </Link>
         </div>
         <div className={styles.item}>
           <Image src="/icons/digitalgames.svg" width={25} height={25} />
-          <a>Digital Games</a>
+          <Link href="/Search/DigitalGames">
+            <a>Digital Games</a>
+          </Link>
         </div>
         <div className={styles.item}>
           <Image src="/icons/games.svg" width={25} height={25} />
-          <a>Games</a>
+          <Link href="/Search/Index">
+            <a>Games</a>
+          </Link>
         </div>
         <div className={styles.item}>
           <Image src="/icons/streaming.svg" width={25} height={25} />
-          <a>Streaming</a>
+          <Link href="/Search/Streaming">
+            <a>Streaming</a>
+          </Link>
         </div>
       </div>
       <div className={styles.span}>

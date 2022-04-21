@@ -5,7 +5,8 @@ import "slick-carousel/slick/slick-theme.css";
 import styles from "./Products.module.scss";
 import Card from "./Card";
 import Image from "next/image";
-export default function Products({title}) {
+import Link from 'next/link'
+export default function Products({title, to}) {
     var settings = {
       dots: false,
       arrows: true,
@@ -17,6 +18,7 @@ export default function Products({title}) {
       centerPadding: '20px',
       className: 'slider',
       adaptiveHeight: true,
+      // centerMode: true,
       responsive: [
         {
           breakpoint: 1500,
@@ -28,22 +30,29 @@ export default function Products({title}) {
           }
         },
         {
-          breakpoint: 1152,
+          breakpoint: 1252,
           settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            initialSlide: 0
           }
         },
         {
-          breakpoint: 790,
+          breakpoint: 1130,
+          settings:{
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 0
+          }
+        },
+        {
+          breakpoint: 900,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1
           }
         }
       ],
-      centerMode: true
     };
     return (
       <section className={styles.container}>
@@ -55,7 +64,9 @@ export default function Products({title}) {
             <button className={styles.mostSold}>Most sold</button>
           </div>
           <div className={styles.categories}>
-            <a>See all</a>
+            <Link className={styles.a}href={to} >
+              <a>See all</a>
+            </Link>
             {/* <Image src="/icons/downtriangle.svg" width={18} height={18} /> */}
           </div>
         </div>
