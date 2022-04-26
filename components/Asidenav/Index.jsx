@@ -99,7 +99,7 @@ const Asidenav = ({
                 // fill="#484848"
               />
             </svg>
-            <Link href="/search/searchPhysical">
+            <Link href="/search/searchphysical">
               <a>Physical Games</a>
             </Link>
           </div>
@@ -117,7 +117,7 @@ const Asidenav = ({
                 // fill="#2D60E4"
               />
             </svg>
-            <Link href="/search/searchDigital">
+            <Link href="/search/searchdigital">
               <a>Digital Games</a>
             </Link>
           </div>
@@ -154,7 +154,7 @@ const Asidenav = ({
               />
             </svg>
 
-            <Link href="/search/searchStreaming">
+            <Link href="/search/searchstreaming">
               <a>Streaming</a>
             </Link>
           </div>

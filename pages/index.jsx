@@ -23,13 +23,13 @@ export default function home() {
           </header>
           <Product title="All our products" to="/search/" />
           {/* <News /> */}
-          <Product title="Physical Games" to="/search/searchPhysical" />
-          <Product title="Digital Games" to="/search/searchDigital" />
+          <Product title="Physical Games" to="/search/searchphysical" />
+          <Product title="Digital Games" to="/search/searchdigital" />
           <section className={styles.banner}>
             <img src="/banner.svg" alt="" />
           </section>
           <Product title="All Games" to="/search/" />
-          <Product title="Streaming" to="/search/searchStreaming" />
+          <Product title="Streaming" to="/search/searchstreaming" />
         </div>
         {/* <Footer></Footer> */}
       </Layout>
