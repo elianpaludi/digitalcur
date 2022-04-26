@@ -11,11 +11,11 @@ export default function News() {
     arrows: true,
     infinite: true,
     speed: 750,
-    slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     initialSlide: 0,
     centerPadding: '20px',
-    className: 'sliderr',
+    className: 'slider',
     adaptiveHeight: true,
     responsive: [
       {
