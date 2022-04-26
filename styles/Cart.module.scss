@@ -1,0 +1,309 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+  .leftTitle {
+    width: 90%;
+    padding: 15px 0;
+    font-size: 35px;
+    font-weight: 900;
+    font-family: Roboto, sans-serif;
+    color: white;
+  }
+  .mainContainer {
+    width: 100%;
+    height: 100%;
+    // background: darkred;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    margin-bottom: 50px;
+    .leftContainer {
+      width: 70%;
+      height: 100%;
+      // background: red;
+
+      .cardContainer {
+        width: 100%;
+        height: 100%;
+        // background: green;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+      .leftInfo {
+        text-align: center;
+        font-size: 15px;
+        font-family: Poppins, sans-serif;
+        font-weight: 900;
+        color: white;
+        margin: 25px 0;
+      }
+      .leftBtns {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        button {
+          width: 150px;
+          height: 50px;
+          border-radius: 10px 10px 10px 10px;
+          border: none;
+          background-color: #2d60e4;
+          color: white;
+          font-size: 12px;
+          font-weight: 900;
+          font-family: Roboto, sans-serif;
+          cursor: pointer;
+          transition: all 250ms;
+          &:hover {
+            background-color: #224bb1;
+          }
+        }
+        p {
+          width: 250px;
+          position: relative;
+          top: 10px;
+          height: 100px;
+          font-size: 20px;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          font-weight: 900;
+          font-family: Roboto, sans-serif;
+          span {
+            font-weight: 700;
+            font-size: 30px;
+            color: #2d60e4;
+          }
+        }
+      }
+    }
+    .rightContainer {
+      background-color: #2d60e4;
+      width: 30%;
+      border-radius: 0 20px 20px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-between;
+      .creditContainer {
+        margin-top: 25px;
+        font-family: Poppins, sans-serif;
+        font-weight: 700;
+        justify-content: center;
+        h2 {
+          font-size: 40px;
+          text-align: center;
+          margin-bottom: 30px;
+        }
+        input {
+          background-color: transparent;
+          border: none;
+          border-bottom: 2px solid #ffff;
+          text-align: center;
+          color: white;
+          &::placeholder {
+            color: #c9c9c9;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+        .creditNumber {
+          margin-left: 25px;
+
+          p {
+            font-size: 20px;
+          }
+          input {
+            margin: 20px 0;
+            width: 80% !important;
+            text-align: center;
+          }
+        }
+        .cardExpiry {
+          margin-left: 25px;
+          .expiryInput {
+            display: flex;
+            flex-direction: row;
+            p {
+              font-size: 20px;
+            }
+            input {
+              margin: 20px 0;
+              text-align: center;
+              width: 20%;
+            }
+            span {
+              margin: 20px 0;
+            }
+          }
+        }
+        .cardCvv {
+          margin-left: 25px;
+          p {
+            font-size: 20px;
+          }
+          input {
+            margin: 20px 0;
+            text-align: center;
+          }
+        }
+        .crib {
+          margin-left: 25px;
+          p {
+            font-size: 20px;
+          }
+          input {
+            margin: 20px 0;
+            text-align: center;
+          }
+        }
+        button {
+          color: #2d60e4;
+          width: 90%;
+          margin: 15px auto;
+          display: flex;
+          justify-content: center;
+          font-size: 30px;
+          font-weight: 600;
+          font-family: Poppins, sans-serif;
+          border: none;
+          background-color: white;
+          border-radius: 25px;
+          cursor: pointer;
+          transition: all 250ms;
+          &:hover {
+            background-color: #dfdfdf;
+          }
+        }
+      }
+      .rightInfo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 150px;
+        padding: 0 15px;
+        background-color: #2652c5;
+        border-bottom-right-radius: 20px;
+        p {
+          font-family: poppins, sans-serif;
+          font-size: 10px;
+          font-weight: 300;
+          color: white;
+          max-width: 80%;
+        }
+        .visaMaster {
+          width: 20%;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1050px) {
+  .creditContainer {
+    h2 {
+      width: 50% !important;
+      margin: 0 auto;
+      font-size: 25px !important;
+    }
+    button {
+      font-size: 20px !important;
+    }
+    p {
+      font-size: 15px !important;
+    }
+  }
+  .rightInfo {
+    p {
+      font-size: 8px !important;
+      max-width: 60% !important;
+    }
+    .visaMaster {
+      width: 40%;
+      margin: 0 auto;
+    }
+  }
+  .leftInfo {
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 990px) {
+  .mainContainer {
+    flex-direction: column !important;
+    .leftContainer {
+      width: 100% !important;
+      .leftInfo {
+        font-size: 10px !important;
+      }
+      .leftBtns {
+        flex-direction: column !important;
+        button {
+          font-size: 20px !important;
+          width: 90% !important;
+          height: 50px !important;
+          margin-bottom: 25px;
+        }
+      }
+    }
+    .rightContainer {
+      width: 100% !important;
+      border-radius: 5px 5px 20px 20px !important;
+      .rightInfo {
+        border-radius: 20px !important;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .mainContainer {
+    flex-direction: column !important;
+    .leftContainer,
+    .rightContainer {
+      width: 100% !important;
+      // height: 30vh;
+      border-radius: 10px !important;
+      .rightInfo {
+        border-radius: 10px !important;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .leftTitle {
+    margin: 20px auto;
+
+    h2 {
+      font-size: 40px !important;
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .leftTitle {
+    font-size: 20px !important;
+    text-align: center;
+    margin: 20px auto;
+  }
+  .mainContainer {
+    margin-bottom: 100px !important;
+    .leftContainer {
+      width: 80% !important;
+      margin: 0 auto;
+    }
+    .rightContainer {
+      .creditContainer {
+        h2 {
+          font-size: 35px !important;
+        }
+      }
+    }
+  }
+}

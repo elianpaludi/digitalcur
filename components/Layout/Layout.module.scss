@@ -1,0 +1,36 @@
+.container {
+  width: 100% !important;
+  height: 100%;
+  .superMainContainer {
+    display: flex;
+    width: 100% !important;
+    flex-direction: row;
+    .asideContainer {
+      width: 250px;
+      height: 100%;
+      position: sticky;
+      top: 0px;
+      // bottom: 500px;
+      // bottom: 1px;
+    }
+    .mainContainer {
+      // background-color: powderblue;
+      width: 100%;
+      margin: 0 auto;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      color: white;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .superMainContainer {
+    flex-direction: column !important;
+    .asideContainer {
+      width: 100% !important;
+      z-index: 5;
+      top: calc(100% - 50px) !important;
+    }
+  }
+}

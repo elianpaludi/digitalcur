@@ -1,0 +1,310 @@
+.container {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 50px auto 200px auto;
+  .leftContainer {
+    width: 70%;
+    // background: darkred;
+    .images {
+      width: 100%;
+      //   background: red;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 15px;
+      border-radius: 10px;
+      .imageBig {
+        img {
+          border-radius: 10px;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .imageSmall {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+    }
+    .titleDesc {
+      width: 100%;
+      // background: red;
+      .title {
+        text-align: center;
+        padding: 25px 0;
+        h3 {
+          font-family: Roboto, sans-serif;
+          font-size: 50px;
+          font-weight: 800;
+          color: white;
+        }
+      }
+      .desc {
+        padding-top: 15px;
+        font-family: Poppins, sans-serif;
+        font-size: 10px;
+        color: white;
+        font-weight: 900;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .desc1 {
+          width: 45%;
+          // text-align: left;
+        }
+        .desc2 {
+          width: 45%;
+          // background: red;
+          margin-right: 5px;
+          // text-align: right;
+        }
+      }
+    }
+  }
+  .rightContainer {
+    width: 30%;
+    // background: red;
+    //   height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .pricing {
+      // background-color: peru;
+      display: flex;
+      flex-direction: column;
+      border-right: 5px solid #2d60e4;
+      .standard,
+      .membership {
+        margin: 5px 0 5px 25px;
+        p {
+          font-size: 30px;
+          font-weight: 800;
+          font-family: Poppins, sans-serif;
+          color: white;
+          &:last-child {
+            font-size: 50px;
+            font-weight: 900;
+            color: #2d60e4;
+          }
+        }
+      }
+      .options {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        .option {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin: 5px 0 5px 25px;
+          img {
+            margin-right: 10px;
+          }
+          p {
+            font-size: 15px;
+            font-family: Roboto, sans-serif;
+            font-weight: 900;
+          }
+        }
+      }
+    }
+    .addToCart {
+      //   background-color: rgb(122, 82, 41);
+      //   background: peru;
+      height: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .addToTitle {
+        background-color: #2d60e4;
+        width: 55%;
+        height: 35px;
+        margin: 0 auto;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+          text-align: center;
+          color: white;
+          font-size: 15px;
+          font-family: Roboto, sans-serif;
+          font-weight: 900;
+        }
+      }
+      .amount {
+        width: 55%;
+        margin: 0 auto;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        font-size: 25px;
+        button {
+          width: 50px;
+          height: 50px;
+          margin: 0 auto;
+          background-color: transparent;
+          font-size: 35px;
+          color: white;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 3px solid white;
+          border-radius: 50px;
+          transition: all 250ms;
+          &:hover {
+            color: #2d60e4;
+            border: 3px solid #2d60e4;
+          }
+        }
+      }
+      .addToButton {
+        width: 250px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        border: none;
+        background-color: #2d60e4;
+        color: white;
+        font-size: 30px;
+        font-family: Roboto, sans-serif;
+        font-weight: 900;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 250ms;
+        &:hover {
+          background-color: #2047a8;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1110px) {
+  .standard,
+  .membership {
+    p {
+      font-size: 25px !important;
+    }
+  }
+  .addToTitle {
+    width: 90% !important;
+    p {
+      font-size: 12px !important;
+    }
+  }
+  .addToButton {
+    width: 90% !important;
+    font-size: 20px !important;
+  }
+  .amount {
+    button {
+      border: none !important;
+    }
+    p {
+      margin: 0 35px;
+    }
+  }
+  .images {
+    // background: red;
+    height: 250px;
+    .imageBig {
+      width: 100% !important;
+      height: 100% !important;
+      img {
+        width: 100% !important;
+      }
+    }
+    .imageSmall {
+      border-radius: 0px !important;
+      overflow-y: scroll !important;
+    }
+  }
+}
+@media (max-width: 990px) {
+  .desc {
+    flex-direction: column !important;
+    .desc1,
+    .desc2 {
+      width: 100% !important;
+      margin: 5px 0;
+    }
+  }
+  .standard,
+  .membership {
+    p {
+      font-size: 20px !important;
+    }
+  }
+  .option {
+    p {
+      font-size: 10px !important;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column !important;
+    .leftContainer {
+      width: 100%;
+      .images {
+        height: 100% !important;
+        flex-direction: column !important;
+        .imageSmall {
+          flex-direction: row !important;
+          overflow-x: scroll;
+          overflow-y: auto;
+        }
+      }
+    }
+    .rightContainer {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 25px;
+      .pricing {
+        border-right: none !important;
+        border-top: 5px solid #2d60e4;
+        border-bottom: 5px solid #2d60e4;
+        padding: 25px;
+        margin-bottom: 50px;
+        .standard,
+        .membership {
+          justify-content: center !important;
+          text-align: center;
+          margin: 5px 0 !important;
+          p {
+            font-size: 30px !important;
+          }
+        }
+        .options {
+          flex-direction: row !important;
+          justify-content: space-between;
+          .option {
+            margin: 5px 0 !important;
+            p {
+              font-size: 15px !important;
+            }
+          }
+        }
+      }
+      .addToCart{
+        // background: red;
+        .amount{
+          margin: 50px auto;
+        }
+      }
+    }
+  }
+}

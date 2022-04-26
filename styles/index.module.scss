@@ -1,0 +1,29 @@
+.container{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .header{
+        width: 90% !important;
+        height: 100%;
+        align-items: center;
+        margin: 0 auto;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .banner{
+        width: 90% !important;
+        height: 100% !important;
+        margin: 100px auto;
+        align-items: center;
+        margin: 50px auto;
+        img{
+            width: 100%;
+        }
+    }
+}

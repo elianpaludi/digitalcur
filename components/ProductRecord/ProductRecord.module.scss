@@ -1,0 +1,120 @@
+.container {
+  width: 75%;
+  margin: 0 auto;
+  height: 75px;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #484848;
+  border-radius: 5px;
+  .img {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    img {
+      border-radius: 10px;
+      width: 200px;
+      object-fit: cover;
+      height: 60px;
+      padding: 5px;
+    }
+  }
+  .titleDate {
+    font-family: Poppins, sans-serif;
+    .title {
+      font-size: 20px;
+      font-weight: 900;
+      color: white;
+    }
+    .date {
+      font-size: 13px;
+      font-weight: 800;
+      color: #828282;
+    }
+  }
+  .paymentPurchase {
+    text-align: center;
+    .payment,
+    .purchase {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 5px 25px;
+      img {
+        width: 25px;
+        height: 25px;
+        margin: 0 15px;
+      }
+      p {
+        font-size: 12px;
+        font-weight: 800;
+        font-family: Poppins, sans-serif;
+        color: white;
+      }
+    }
+  }
+}
+
+@media (max-width: 1048px) {
+  .container {
+    .img {
+      img {
+        width: 150px !important;
+      }
+    }
+    .titleDate {
+      .title {
+        font-size: 12px !important;
+      }
+    }
+    .paymentPurchase {
+      .payment,
+      .purchase {
+        p {
+          font-size: 10px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    height: 250px;
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    // gap: 15px;
+    .img {
+      img {
+        width: 90% !important;
+        height: 90% !important;
+        // width: 250px !important;
+        // height: 125px !important;
+      }
+    }
+    .titleDate {
+      .title {
+        font-size: 15px !important;
+      }
+    }
+    .paymentPurchase {
+      .payment,
+      .purchase {
+        p {
+          font-size: 12px !important;
+        }
+        img {
+          margin: 0 5px !important;
+        }
+      }
+    }
+  }
+}
+@media(max-width: 350px){
+  .container{
+    width: 100% !important;
+  }
+}
