@@ -28,7 +28,7 @@ const Asidenav = ({
   };
   const handleClick4 = (e) => {
     e.preventDefault();
-    router.push("/myCart");
+    router.push("/mycart");
   };
   return (
     <nav className={styles.nav}>
